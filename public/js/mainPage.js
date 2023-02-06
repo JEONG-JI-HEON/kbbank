@@ -11,6 +11,11 @@ if (window.location.pathname == "/siteMapPage") {
   footer.style.display = "none";
 }
 
+let main = document.querySelector("#main");
+if (window.location.pathname !== "/") {
+  main.style.paddingTop = "95px";
+}
+
 window.addEventListener("wheel", () => {
   // 세번째 섹션 도달했을때 footer 나오게 하기
   let footerPagination = document.getElementById("swiper-pagination-bullet4");
